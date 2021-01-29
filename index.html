@@ -4,8 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minion Translate</title>
+  <style>
+    #text {
+      display: block;
+      height: 200px;
+      width: 960px;
+      margin: auto;
+      padding: 20px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .btnTranslate {
+      display: block;
+      margin: auto;
+    }
+    .output {
+      height: 200px;
+      border: 1px solid black;
+      width: 900px;
+      margin: auto;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  
+  <textarea name="text" id="text" placeholder="Enter your text here"></textarea>
+  <button class="btnTranslate">Click Me!!</button>
+  <div class="output"></div>
+
+  <script src="app.js" type="text/javascript"></script>
 </body>
 </html>

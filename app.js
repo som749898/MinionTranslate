@@ -1,13 +1,10 @@
-var btn = document.querySelector(".btnTranslate")
-var textarea = document.querySelector("#text")
-var textout = document.querySelector(".output")
-console.log(textout)
-btn.addEventListener("click", clickHand)
-function clickHand() {
-  console.log("clicked!!!")
-  console.log("input", textarea.value)
-}
-
-function clickEvent(){
-  console.log("Clickedddd!!")
+var btnTranslate = document.querySelector("#btn-trans");
+var txtInput = document.querySelector("#txt-Input");
+var outputDiv = document.querySelector("#output");
+btnTranslate.addEventListener("click", clickHandler);
+function clickHandler() {
+  console.log("clickeddd!!!");
+  console.log("Input ", txtInput.value);
+  outputDiv.innerText = "Hello Manish Welcome " + txtInput.value;
+  console.log(outputDiv.innerText);
 }
